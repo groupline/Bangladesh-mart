@@ -1,0 +1,14 @@
+.nav-bar {
+  display: none;
+}
+.bar {
+  color: orange;
+  font-size: 30px;
+  margin-top: 23px;
+}
+
+@media (max-width: 991px) {
+  .nav-bar {
+    display: block;
+  }
+}
