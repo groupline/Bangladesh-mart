@@ -40,3 +40,28 @@ span[1].onclick = () => {
 span[0].onclick = () => {
   left_mover();
 };
+
+let hide_btn = (x) => {
+  x.style.display = "none";
+  x.nextElementSibling.style.display = "block";
+};
+var data = 1;
+function increment(y) {
+  data = data + 1;
+
+  let sibling = y.parentNode.childNodes[2];
+  sibling.innerText = data;
+  console.log(sibling);
+}
+decrement = (z) => {
+  if (data === 1) {
+    z.parentNode.parentNode.firstChild.style.display = "block";
+    z.parentNode.style.display = "none";
+  } else {
+    data = data - 1;
+
+    let sibling = z.nextElementSibling;
+    sibling.innerText = data;
+    console.log(sibling);
+  }
+};

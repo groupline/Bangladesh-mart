@@ -29,15 +29,20 @@
     <!-- slider css -->
     <link rel="stylesheet"
           href="css/slider.css">
-<!-- NAV CSS -->
-<link rel="stylesheet" href="css/nav.css">
+    <!-- NAV CSS -->
+    <link rel="stylesheet"
+          href="css/nav.css">
+    <!-- gallery css -->
+    <link rel="stylesheet"
+          href="css/gallery.css">
     <title>Bangladesh Mart</title>
 </head>
 
 <body>
-    
+
     <!-- Header start -->
-    <div class="main-header-area">
+    <div id="strip2">
+    <div id="nav_Bar" class="navBar ">
         <div class="strip-1">
             <div class="contact-area">
                 <div class="phone"><i class="fas fa-phone-alt"></i>
@@ -58,1089 +63,1283 @@
                                 id="dropdownMenuButton1"
                                 data-bs-toggle="dropdown"
                                 aria-expanded="false">
-                            <i class="fab fa-canadian-maple-leaf s-i"></i><span>Canada/CAD</span>
+                            <img class="flag-img"
+                                 src="images/flag.png"
+                                 alt=""><span class="lan-head">/Country/Currency</span>
                         </button>
-                        <div  id="drop-nav-down" class="dropdown-menu-1">  
-                        <ul class="dropdown-menu"
-                            aria-labelledby="dropdownMenuButton1">
-                            <li> <span class="ship-text">Ship to</span>
-                                <div class="drop-down">Bangladesh<select class="English"
-                                            id=""></select></div>
-                            </li>
-                            <li> <span class="ship-text">Language</span>
-                                <div class="drop-down">English<select class="English"
-                                            id=""></select></div>
-                            </li>
-                            <li> <span class="ship-text">Currency</span>
-                                <div class="drop-down">BDT(Bangladeshi Takka)<select class="English"
-                                            id=""></select></div>
-                            </li>
-                            <button    onclick="dropdown()" class="btn save btn-danger"> Save</button>
-                        </ul>
+                        <div id="drop-nav-down"
+                             class="dropdown-menu-1">
+                            <ul class="dropdown-menu"
+                                aria-labelledby="dropdownMenuButton1">
+                                <li> <span class="ship-text">Ship to</span>
+                                    <div class="drop-down"><select class="English"
+                                                id="">
+                                            <option value="Bangladesh">Country 1</option>
+                                            <option value="Bangladesh">Country 2</option>
+                                            <option value="Bangladesh">Country 3</option>
+                                        </select></div>
+                                </li>
+                                <li> <span class="ship-text">Language</span>
+                                    <div class="drop-down"><select class="English"
+                                                id="">
+                                            <option value="Bangladesh">Language 1</option>
+                                            <option value="Bangladesh">Language 2</option>
+                                            <option value="Bangladesh">Language 3</option>
+                                        </select></div>
+                                </li>
+                                <li> <span class="ship-text">Currency</span>
+                                    <div class="drop-down"><select class="English"
+                                                id="">
+                                            <option value="Bangladesh">Currency 1</option>
+                                            <option value="Bangladesh">Currency 2</option>
+                                            <option value="Bangladesh">Currency 3</option>
+                                        </select></div>
+                                </li>
+                                <button onclick="dropdown()"
+                                        class="btn save btn-danger"> Save</button>
+                            </ul>
                         </div>
                     </div>
                 </div>
                 <div class="user-sign">
                     <div class="sign-icons">
-                        <a href=""> <i class="fas fa-user"></i><span class="sign-text"> &nbsp; Sign in &nbsp; </span>
+                        <a href=""> <i class="fas fa-user"></i><span class="sign-text"> &nbsp; Sign in &nbsp;
+                            </span>
                         </a> | &nbsp;
-                        <a href=""><i class="fas fa-user-plus"></i><span class="sign-text">&nbsp; Sign up &nbsp;</span>
+                        <a href=""><i class="fas fa-user-plus"></i><span class="sign-text">&nbsp; Sign up
+                                &nbsp;</span>
                         </a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="strip-2">
-            <div class="nav-bar">
-                <i class="fas bar fa-bars"></i>
+      
+            <div class="main-strip-2">
+                <div id="strip" class="strip-2 ">
+                    <div class="nav-bar"
+                         onclick="Navbar()">
+                        <i class="fas bar fa-bars"></i>
+                    </div>
+                    <div class="logo">
+                        <img src="images/logo"
+                             alt="">
+                    </div>
+                    <div class="search-box">
+                        <form class="example"
+                              action="action_page.php">
+                            <input type="text"
+                                   placeholder="What are you looking for?"
+                                   name="search">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+                    <div class="cart-icon">
+                        <img src="images/cart.png"
+                             alt="">
+                    </div>
+                </div>
             </div>
-            <div class="logo">
-             <img src="images/logo"
-                     alt="">
-            </div>
-            <div class="search-box">
-                <form class="example"
-                      action="action_page.php">
-                    <input type="text"
-                           placeholder="What are you looking for?"
-                           name="search">
-                    <button type="submit"><i class="fa fa-search"></i></button>
-                </form>
-            </div>
-        <div class="cart-icon">
-            <img src="images/cart.png" alt="">
-        </div>
-        </div>
-    </div>
-    <!-- Header start -->
-    <!-- Second Nav bar -->
-    <div class="sec_nav">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="">
-                    <div class="accordion"
-                         id="accordionPanelsStayOpenExample">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header"
-                                id="panelsStayOpen-headingThree">
-                                <button class="accordion-button collapsed"
-                                        type="button"
-                                        data-bs-toggle="collapse"
-                                        data-bs-target="#panelsStayOpen-collapseThree"
-                                        aria-expanded="false"
-                                        aria-controls="panelsStayOpen-collapseThree">
-                                    Departments
-                                </button>
-                            </h2>
-                            <div id="panelsStayOpen-collapseThree"
-                                 class="accordion-collapse collapse"
-                                 aria-labelledby="panelsStayOpen-headingThree">
-                                <div class="accordion-body">
-                                    <ul>
-                                        <li class="nav-links here">
-                                            <a href="#about"
-                                               class="main-cata  go-down">Appliances</a>
-                                            <div class="mega_content">
-                                                <div class="content">
-                                                    <div class="dropmenu">
-                                                        <a class="ApHead"
-                                                           href="#about">All Appliances</a>
-                                                        <a class="Appera"
-                                                           href="#about">Appliances on Rollback</a>
-                                                        <header class="con-head">Small Appliances</header>
-                                                        <ul class="pro-nav">
-                                                            <li class="drop-nav-link"><a href="#">Coffee, Espresso & Tea
-                                                                    Makers</a></li>
-                                                            <li class="drop-nav-link"><a href="#">Blenders & juicers</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Slow Cookers & Multi
-                                                                    Pots</a></li>
-                                                            <li class="drop-nav-link"><a href="#">Microwaves</a></li>
-                                                            <li class="drop-nav-link"><a href="#">Electric Grills &
-                                                                    Skillets</a></li>
-                                                            <li class="drop-nav-link"><a href="#">Stand Mixers</a></li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="dropmenu">
-                                                        <header class="con-head">Vacuum Sealers</header>
-                                                        <ul class="pro-nav">
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout1</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout2</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout3</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout4</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout5</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout6</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="dropmenu">
-                                                        <header class="con-head">Large Appliances</header>
-                                                        <ul class="pro-nav">
-                                                            <li class="drop-nav-link"><a href="#">Refurbished
-                                                                    Vacuums</a></li>
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout2</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Irons & Clothes
-                                                                    Steamers</a></li>
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout4</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout5</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout6</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="dropmenu"
-                                                         id=dropmenu>
-                                                        <header class="con-head">Air Conditioners</header>
-                                                        <ul class="pro-nav">
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout1</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout2</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout3</a>
-                                                            </li>
 
-                                                        </ul>
-                                                    </div>
-                                                    <div class="dropmenu"
-                                                         id=dropmenu>
-                                                        <header class="con-head">Sewing Machines</header>
-                                                        <ul class="pro-nav">
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout4</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout5</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout6</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
+            <!-- Header start -->
+            <!-- Second Nav bar -->
+            <div id="sec_bar"
+                 class="sec_nav ">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="">
+                            <div class="accordion"
+                                 id="accordionPanelsStayOpenExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header"
+                                        id="panelsStayOpen-headingThree">
+                                        <button class="accordion-button collapsed"
+                                                type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#panelsStayOpen-collapseThree"
+                                                aria-expanded="false"
+                                                aria-controls="panelsStayOpen-collapseThree">
+                                            <span> Departments</span>
+                                        </button>
+                                    </h2>
+                                    <div id="panelsStayOpen-collapseThree"
+                                         class="accordion-collapse collapse"
+                                         aria-labelledby="panelsStayOpen-headingThree">
+                                        <div id="accordion_body" class="accordion-body ">
+                                            
+                                            <ul>
+                                                
+                                                <li class="nav-links here">
+                                                    <a href="#about"
+                                                       class="main-cata  go-down">Appliances</a>
+                                                    <div class="mega_content">
+                                                        <div class="content">
+                                                            <div class="dropmenu">
 
-                                        <li class="nav-links second">
-                                            <a href="#base"
-                                               class="main-cata">Automotive</a>
-                                            <div class="mega_content megas"
-                                                 id="mega_content">
-                                                <div class="content">
-                                                    <div class="dropmenu">
-                                                        <a class="ApHead"
-                                                           href="#about">Shope All Automotive</a>
-                                                        <a class="Appera"
-                                                           href="#about">Online Savings</a>
-                                                        <header class="con-head">Water Purification</header>
-                                                        <ul class="pro-nav">
-                                                            <li class="drop-nav-link"><a href="#">Upright Vacuums</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Vacuums &
-                                                                    Floorcare</a></li>
-                                                            <li class="drop-nav-link"><a href="#">Product Layout3</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Canister Vacuums</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Product Layout5</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Robot Vacuums</a></li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="dropmenu">
-                                                        <header class="con-head">Heating, Cooling & Air Quality</header>
-                                                        <ul class="pro-nav">
-                                                            <li class="drop-nav-link"><a href="#">Humidifiers</a></li>
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout2</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout3</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout4</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout5</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Baby Food Makers</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="dropmenu">
-                                                        <header class="con-head">Baby Food & Bottle Appliances</header>
-                                                        <ul class="pro-nav">
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout1</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Baby Formula
-                                                                    Makers</a></li>
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout3</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout4</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Baby Formula
-                                                                    Makers</a></li>
-                                                            <li class="drop-nav-link"><a href="#">Handvacs
-                                                                </a></li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="dropmenu"
-                                                         id=dropmenu>
-                                                        <header class="con-head">
-                                                            Pet Friendly Vacuums</header>
-                                                        <ul class="pro-nav">
-                                                            <li class="drop-nav-link"><a href="#">Stick Vacuums</a></li>
-                                                            <li class="drop-nav-link"><a href="#">Freezers & Ice
-                                                                    Makers</a></li>
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout3</a>
-                                                            </li>
+                                                                <header class="con-head">Small Appliances</header>
+                                                                <ul class="pro-nav">
+                                                                    <li class="drop-nav-link"><a href="#">Coffee,
+                                                                            Espresso & Tea
+                                                                            Makers</a></li>
+                                                                    <li class="drop-nav-link"><a href="#">Blenders &
+                                                                            juicers</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a href="#">Slow
+                                                                            Cookers & Multi
+                                                                            Pots</a></li>
+                                                                    <li class="drop-nav-link"><a href="#">Microwaves</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a href="#">Electric
+                                                                            Grills &
+                                                                            Skillets</a></li>
+                                                                    <li class="drop-nav-link"><a href="#">Stand
+                                                                            Mixers</a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="dropmenu">
+                                                                <header class="con-head">Vacuum Sealers</header>
+                                                                <ul class="pro-nav">
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout1</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout2</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout3</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout4</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout5</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout6</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="dropmenu">
+                                                                <header class="con-head">Large Appliances</header>
+                                                                <ul class="pro-nav">
+                                                                    <li class="drop-nav-link"><a href="#">Refurbished
+                                                                            Vacuums</a></li>
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout2</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a href="#">Irons &
+                                                                            Clothes
+                                                                            Steamers</a></li>
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout4</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout5</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout6</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="dropmenu"
+                                                                 id=dropmenu>
+                                                                <header class="con-head">Air Conditioners</header>
+                                                                <ul class="pro-nav">
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout1</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout2</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout3</a>
+                                                                    </li>
 
-                                                        </ul>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="dropmenu"
+                                                                 id=dropmenu>
+                                                                <header class="con-head">Sewing Machines</header>
+                                                                <ul class="pro-nav">
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout4</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout5</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout6</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                    <div class="dropmenu"
-                                                         id=dropmenu>
-                                                        <header class="con-head">Refrigerators</header>
-                                                        <ul class="pro-nav">
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout4</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout5</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout6</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="nav-links second">
-                                            <a href="#blog"
-                                               class="main-cata">Baby</a>
-                                            <div class="mega_content megas2"
-                                                 id="mega_content">
-                                                <div class="content">
-                                                    <div class="dropmenu">
-                                                        <a class="ApHead"
-                                                           href="#about">All Baby</a>
-                                                        <a class="Appera"
-                                                           href="#about">Shop Rollback & Clearance</a>
-                                                        <a class="Appera"
-                                                           href="#about">NewBorn Essentials(0-6M)</a>
-                                                        <header class="con-head">Specialty Appliances</header>
-                                                        <ul class="pro-nav">
-                                                            <li class="drop-nav-link"><a href="#">Over-The-Range
-                                                                    Microwaves</a></li>
-                                                            <li class="drop-nav-link"><a href="#">Product Layout2</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Product Layout3</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Ovens & Ranges</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Product Layout5</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Product Layout6</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="dropmenu">
-                                                        <header class="con-head">Product Layout</header>
-                                                        <ul class="pro-nav">
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout1</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout2</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout3</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout4</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout5</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout6</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="dropmenu">
-                                                        <header class="con-head">Product Layout</header>
-                                                        <ul class="pro-nav">
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout1</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout2</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout3</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout4</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout5</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout6</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="dropmenu"
-                                                         id=dropmenu>
-                                                        <header class="con-head">Product Layout</header>
-                                                        <ul class="pro-nav">
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout1</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout2</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout3</a>
-                                                            </li>
+                                                </li>
 
-                                                        </ul>
-                                                    </div>
-                                                    <div class="dropmenu"
-                                                         id=dropmenu>
-                                                        <header class="con-head">Product Layout</header>
-                                                        <ul class="pro-nav">
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout4</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout5</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout6</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="nav-links third">
-                                            <a href="#contact"
-                                               class="main-cata">Clothing,Shoes & Accessories</a>
-                                            <div class="mega_content megas3"
-                                                 id="mega_content">
-                                                <div class="content">
-                                                    <div class="dropmenu">
-                                                        <a class="ApHead"
-                                                           href="#about">Clothing,Shoes & Accessories</a>
-                                                        <a class="Appera"
-                                                           href="#about">The Basic Shop</a>
-                                                        <a class="Appera"
-                                                           href="#about">Matching Outfits</a>
-                                                        <header class="con-head">Women</header>
-                                                        <ul class="pro-nav">
-                                                            <li class="drop-nav-link"><a href="#">Shop all women's
-                                                                    clothing</a></li>
-                                                            <li class="drop-nav-link"><a href="#">Plus</a></li>
-                                                            <li class="drop-nav-link"><a href="#">Product Layout3</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Product Layout4</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Handbags & wallets</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Product Layout6</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="dropmenu">
-                                                        <header class="con-head">Men</header>
-                                                        <ul class="pro-nav">
-                                                            <li class="drop-nav-link"><a href="#">Shop all men's
-                                                                    clothing</a></li>
-                                                            <li class="drop-nav-link"><a href="#">Big & tall</a></li>
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout3</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Wallets</a></li>
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout5</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout6</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="dropmenu">
-                                                        <header class="con-head">Kids</header>
-                                                        <ul class="pro-nav">
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout1</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout2</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout3</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout4</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout5</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout6</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="dropmenu"
-                                                         id=dropmenu>
-                                                        <header class="con-head">Shoes</header>
-                                                        <ul class="pro-nav">
-                                                            <li class="drop-nav-link"><a href="#">Shop all shoes</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Women's shoes</a></li>
-                                                            <li class="drop-nav-link"><a href="#">Boys's shoes</a></li>
+                                                <li class="nav-links second">
+                                                    <a href="#base"
+                                                       class="main-cata">Automotive</a>
+                                                    <div class="mega_content megas"
+                                                         id="mega_content">
+                                                        <div class="content">
+                                                            <div class="dropmenu">
 
-                                                        </ul>
-                                                    </div>
-                                                    <div class="dropmenu"
-                                                         id=dropmenu>
-                                                        <header class="con-head">Juellary</header>
-                                                        <ul class="pro-nav">
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout4</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout5</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout6</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="nav-links">
-                                            <a href="#custom"
-                                               class="main-cata">Electronics</a>
-                                            <div class="mega_content megas4"
-                                                 id="mega_content">
-                                                <div class="content">
-                                                    <div class="dropmenu">
-                                                        <a class="ApHead"
-                                                           href="#about">All Electronics</a>
-                                                        <a class="Appera"
-                                                           href="#about">Trusted refurbished items</a>
-                                                        <a class="Appera"
-                                                           href="#about">NewBorn Essentials(0-6M)</a>
-                                                        <header class="con-head">Specialty Appliances</header>
-                                                        <ul class="pro-nav">
-                                                            <li class="drop-nav-link"><a href="#">Over-The-Range
-                                                                    Microwaves</a></li>
-                                                            <li class="drop-nav-link"><a href="#">Shop Rollback</a></li>
-                                                            <li class="drop-nav-link"><a href="#">Product Layout3</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Ovens & Ranges</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Product Layout5</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Product Layout6</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="dropmenu">
-                                                        <header class="con-head">Product Layout</header>
-                                                        <ul class="pro-nav">
-                                                            <li class="drop-nav-link"><a href="#">Shop Rollback</a></li>
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout2</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout3</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Shop Rollback</a></li>
-                                                            <li class="drop-nav-link"><a href="#">Washers & Dryers</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Vacuum Sealers</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="dropmenu">
-                                                        <header class="con-head">Product Layout</header>
-                                                        <ul class="pro-nav">
-                                                            <li class="drop-nav-link"><a href="#">Shop Rollback</a></li>
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout2</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Shop Rollback</a></li>
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout4</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Washers & Dryers</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Vacuum Sealers</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="dropmenu"
-                                                         id=dropmenu>
-                                                        <header class="con-head">Product Layout</header>
-                                                        <ul class="pro-nav">
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout1</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Washers & Dryers</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Vacuum Sealers</a>
-                                                            </li>
+                                                                <header class="con-head">Water Purification</header>
+                                                                <ul class="pro-nav">
+                                                                    <li class="drop-nav-link"><a href="#">Upright
+                                                                            Vacuums</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a href="#">Vacuums &
+                                                                            Floorcare</a></li>
+                                                                    <li class="drop-nav-link"><a href="#">Product
+                                                                            Layout3</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a href="#">Canister
+                                                                            Vacuums</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a href="#">Product
+                                                                            Layout5</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a href="#">Robot
+                                                                            Vacuums</a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="dropmenu">
+                                                                <header class="con-head">Heating, Cooling & Air
+                                                                    Quality</header>
+                                                                <ul class="pro-nav">
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Humidifiers</a></li>
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout2</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout3</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout4</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout5</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a href="#">Baby Food
+                                                                            Makers</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="dropmenu">
+                                                                <header class="con-head">Baby Food & Bottle
+                                                                    Appliances</header>
+                                                                <ul class="pro-nav">
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout1</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a href="#">Baby
+                                                                            Formula
+                                                                            Makers</a></li>
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout3</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout4</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a href="#">Baby
+                                                                            Formula
+                                                                            Makers</a></li>
+                                                                    <li class="drop-nav-link"><a href="#">Handvacs
+                                                                        </a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="dropmenu"
+                                                                 id=dropmenu>
+                                                                <header class="con-head">
+                                                                    Pet Friendly Vacuums</header>
+                                                                <ul class="pro-nav">
+                                                                    <li class="drop-nav-link"><a href="#">Stick
+                                                                            Vacuums</a></li>
+                                                                    <li class="drop-nav-link"><a href="#">Freezers &
+                                                                            Ice
+                                                                            Makers</a></li>
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout3</a>
+                                                                    </li>
 
-                                                        </ul>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="dropmenu"
+                                                                 id=dropmenu>
+                                                                <header class="con-head">Refrigerators</header>
+                                                                <ul class="pro-nav">
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout4</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout5</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout6</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                    <div class="dropmenu"
-                                                         id=dropmenu>
-                                                        <header class="con-head">Product Layout</header>
-                                                        <ul class="pro-nav">
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout4</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout5</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout6</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="nav-links">
-                                            <a href="#support"
-                                               class="main-cata">Furniture</a>
-                                            <div class="mega_content megas5"
-                                                 id="mega_content">
-                                                <div class="content">
-                                                    <div class="dropmenu">
-                                                        <a class="ApHead"
-                                                           href="#about">All Furniture</a>
-                                                        <a class="Appera"
-                                                           href="#about">Dining Furniture</a>
-                                                        <header class="con-head">Bedroom Furniture</header>
-                                                        <ul class="pro-nav">
-                                                            <li class="drop-nav-link"><a href="#">Over-The-Range
-                                                                    Microwaves</a></li>
-                                                            <li class="drop-nav-link"><a href="#">Shop Rollback</a></li>
-                                                            <li class="drop-nav-link"><a href="#">Product Layout3</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Ovens & Ranges</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Product Layout5</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Product Layout6</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="dropmenu">
-                                                        <header class="con-head">Office Furniture</header>
-                                                        <ul class="pro-nav">
-                                                            <li class="drop-nav-link"><a href="#">Shop Rollback</a></li>
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout2</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout3</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Shop Rollback</a></li>
-                                                            <li class="drop-nav-link"><a href="#">Washers & Dryers</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Vacuum Sealers</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="dropmenu">
-                                                        <header class="con-head">Living Room Furniture</header>
-                                                        <ul class="pro-nav">
-                                                            <li class="drop-nav-link"><a href="#">Shop Rollback</a></li>
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout2</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Shop Rollback</a></li>
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout4</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Washers & Dryers</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Vacuum Sealers</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="dropmenu"
-                                                         id=dropmenu>
-                                                        <header class="con-head">Kids Furniture</header>
-                                                        <ul class="pro-nav">
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout1</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Washers & Dryers</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Vacuum Sealers</a>
-                                                            </li>
+                                                </li>
+                                                <li class="nav-links second">
+                                                    <a href="#blog"
+                                                       class="main-cata">Baby</a>
+                                                    <div class="mega_content megas2"
+                                                         id="mega_content">
+                                                        <div class="content">
+                                                            <div class="dropmenu">
 
-                                                        </ul>
-                                                    </div>
-                                                    <div class="dropmenu"
-                                                         id=dropmenu>
-                                                        <header class="con-head">Kitchen Furniture</header>
-                                                        <ul class="pro-nav">
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout4</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout5</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout6</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="nav-links last-cata">
-                                            <a href="#tools"
-                                               class="main-cata">Gift & Holidays</a>
-                                            <div class="mega_content megas6"
-                                                 id="mega_content">
-                                                <div class="content">
-                                                    <div class="dropmenu">
-                                                        <a class="ApHead"
-                                                           href="#about">All Gifts & Holidays</a>
-                                                        <a class="Appera"
-                                                           href="#about">Shop Rollback & Clearance</a>
-                                                        <a class="Appera"
-                                                           href="#about">Black Friday</a>
-                                                        <header class="con-head">Shop all gifts & holidays</header>
-                                                        <ul class="pro-nav">
-                                                            <li class="drop-nav-link"><a href="#">Over-The-Range
-                                                                    Microwaves</a></li>
-                                                            <li class="drop-nav-link"><a href="#">Boxing Day</a></li>
-                                                            <li class="drop-nav-link"><a href="#">Product Layout3</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Ovens & Ranges</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Product Layout5</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Product Layout6</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="dropmenu">
-                                                        <header class="con-head">Fresh Flowers - Delivered</header>
-                                                        <ul class="pro-nav">
-                                                            <li class="drop-nav-link"><a href="#">Electronic gifts</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Gifts for babies</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Gifts for
-                                                                    grandparents</a></li>
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout4</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout5</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout6</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="dropmenu">
-                                                        <header class="con-head">Secret Santa & gift exchange</header>
-                                                        <ul class="pro-nav">
-                                                            <li class="drop-nav-link"><a href="#">Christmas</a></li>
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout2</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Gifts for women</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout4</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout5</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout6</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="dropmenu"
-                                                         id=dropmenu>
-                                                        <header class="con-head">Product Layout</header>
-                                                        <ul class="pro-nav">
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout1</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout2</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout3</a>
-                                                            </li>
+                                                                <header class="con-head">Specialty Appliances
+                                                                </header>
+                                                                <ul class="pro-nav">
+                                                                    <li class="drop-nav-link"><a href="#">Over-The-Range
+                                                                            Microwaves</a></li>
+                                                                    <li class="drop-nav-link"><a href="#">Product
+                                                                            Layout2</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a href="#">Product
+                                                                            Layout3</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a href="#">Ovens &
+                                                                            Ranges</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a href="#">Product
+                                                                            Layout5</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a href="#">Product
+                                                                            Layout6</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="dropmenu">
+                                                                <header class="con-head">Product Layout</header>
+                                                                <ul class="pro-nav">
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout1</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout2</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout3</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout4</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout5</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout6</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="dropmenu">
+                                                                <header class="con-head">Product Layout</header>
+                                                                <ul class="pro-nav">
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout1</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout2</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout3</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout4</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout5</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout6</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="dropmenu"
+                                                                 id=dropmenu>
+                                                                <header class="con-head">Product Layout</header>
+                                                                <ul class="pro-nav">
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout1</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout2</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout3</a>
+                                                                    </li>
 
-                                                        </ul>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="dropmenu"
+                                                                 id=dropmenu>
+                                                                <header class="con-head">Product Layout</header>
+                                                                <ul class="pro-nav">
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout4</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout5</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout6</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                    <div class="dropmenu"
-                                                         id=dropmenu>
-                                                        <header class="con-head">Product Layout</header>
-                                                        <ul class="pro-nav">
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout4</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout5</a>
-                                                            </li>
-                                                            <li class="drop-nav-link"><a href="#">Product-Layout6</a>
-                                                            </li>
-                                                        </ul>
+                                                </li>
+                                                <li class="nav-links third">
+                                                    <a href="#contact"
+                                                       class="main-cata">Clothing,Shoes & Accessories</a>
+                                                    <div class="mega_content megas3"
+                                                         id="mega_content">
+                                                        <div class="content">
+                                                            <div class="dropmenu">
+
+                                                                <header class="con-head">Women</header>
+                                                                <ul class="pro-nav">
+                                                                    <li class="drop-nav-link"><a href="#">Shop all
+                                                                            women's
+                                                                            clothing</a></li>
+                                                                    <li class="drop-nav-link"><a href="#">Plus</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a href="#">Product
+                                                                            Layout3</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a href="#">Product
+                                                                            Layout4</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a href="#">Handbags &
+                                                                            wallets</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a href="#">Product
+                                                                            Layout6</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="dropmenu">
+                                                                <header class="con-head">Men</header>
+                                                                <ul class="pro-nav">
+                                                                    <li class="drop-nav-link"><a href="#">Shop all
+                                                                            men's
+                                                                            clothing</a></li>
+                                                                    <li class="drop-nav-link"><a href="#">Big &
+                                                                            tall</a></li>
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout3</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a href="#">Wallets</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout5</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout6</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="dropmenu">
+                                                                <header class="con-head">Kids</header>
+                                                                <ul class="pro-nav">
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout1</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout2</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout3</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout4</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout5</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout6</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="dropmenu"
+                                                                 id=dropmenu>
+                                                                <header class="con-head">Shoes</header>
+                                                                <ul class="pro-nav">
+                                                                    <li class="drop-nav-link"><a href="#">Shop all
+                                                                            shoes</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a href="#">Women's
+                                                                            shoes</a></li>
+                                                                    <li class="drop-nav-link"><a href="#">Boys's
+                                                                            shoes</a></li>
+
+                                                                </ul>
+                                                            </div>
+                                                            <div class="dropmenu"
+                                                                 id=dropmenu>
+                                                                <header class="con-head">Juellary</header>
+                                                                <ul class="pro-nav">
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout4</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout5</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout6</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
+                                                </li>
+                                                <li class="nav-links">
+                                                    <a href="#custom"
+                                                       class="main-cata">Electronics</a>
+                                                    <div class="mega_content megas4"
+                                                         id="mega_content">
+                                                        <div class="content">
+                                                            <div class="dropmenu">
+
+                                                                <header class="con-head">Specialty Appliances
+                                                                </header>
+                                                                <ul class="pro-nav">
+                                                                    <li class="drop-nav-link"><a href="#">Over-The-Range
+                                                                            Microwaves</a></li>
+                                                                    <li class="drop-nav-link"><a href="#">Shop
+                                                                            Rollback</a></li>
+                                                                    <li class="drop-nav-link"><a href="#">Product
+                                                                            Layout3</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a href="#">Ovens &
+                                                                            Ranges</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a href="#">Product
+                                                                            Layout5</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a href="#">Product
+                                                                            Layout6</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="dropmenu">
+                                                                <header class="con-head">Product Layout</header>
+                                                                <ul class="pro-nav">
+                                                                    <li class="drop-nav-link"><a href="#">Shop
+                                                                            Rollback</a></li>
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout2</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout3</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a href="#">Shop
+                                                                            Rollback</a></li>
+                                                                    <li class="drop-nav-link"><a href="#">Washers &
+                                                                            Dryers</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a href="#">Vacuum
+                                                                            Sealers</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="dropmenu">
+                                                                <header class="con-head">Product Layout</header>
+                                                                <ul class="pro-nav">
+                                                                    <li class="drop-nav-link"><a href="#">Shop
+                                                                            Rollback</a></li>
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout2</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a href="#">Shop
+                                                                            Rollback</a></li>
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout4</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a href="#">Washers &
+                                                                            Dryers</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a href="#">Vacuum
+                                                                            Sealers</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="dropmenu"
+                                                                 id=dropmenu>
+                                                                <header class="con-head">Product Layout</header>
+                                                                <ul class="pro-nav">
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout1</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a href="#">Washers &
+                                                                            Dryers</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a href="#">Vacuum
+                                                                            Sealers</a>
+                                                                    </li>
+
+                                                                </ul>
+                                                            </div>
+                                                            <div class="dropmenu"
+                                                                 id=dropmenu>
+                                                                <header class="con-head">Product Layout</header>
+                                                                <ul class="pro-nav">
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout4</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout5</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout6</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-links">
+                                                    <a href="#support"
+                                                       class="main-cata">Furniture</a>
+                                                    <div class="mega_content megas5"
+                                                         id="mega_content">
+                                                        <div class="content">
+                                                            <div class="dropmenu">
+
+                                                                <header class="con-head">Bedroom Furniture</header>
+                                                                <ul class="pro-nav">
+                                                                    <li class="drop-nav-link"><a href="#">Over-The-Range
+                                                                            Microwaves</a></li>
+                                                                    <li class="drop-nav-link"><a href="#">Shop
+                                                                            Rollback</a></li>
+                                                                    <li class="drop-nav-link"><a href="#">Product
+                                                                            Layout3</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a href="#">Ovens &
+                                                                            Ranges</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a href="#">Product
+                                                                            Layout5</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a href="#">Product
+                                                                            Layout6</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="dropmenu">
+                                                                <header class="con-head">Office Furniture</header>
+                                                                <ul class="pro-nav">
+                                                                    <li class="drop-nav-link"><a href="#">Shop
+                                                                            Rollback</a></li>
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout2</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout3</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a href="#">Shop
+                                                                            Rollback</a></li>
+                                                                    <li class="drop-nav-link"><a href="#">Washers &
+                                                                            Dryers</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a href="#">Vacuum
+                                                                            Sealers</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="dropmenu">
+                                                                <header class="con-head">Living Room Furniture
+                                                                </header>
+                                                                <ul class="pro-nav">
+                                                                    <li class="drop-nav-link"><a href="#">Shop
+                                                                            Rollback</a></li>
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout2</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a href="#">Shop
+                                                                            Rollback</a></li>
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout4</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a href="#">Washers &
+                                                                            Dryers</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a href="#">Vacuum
+                                                                            Sealers</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="dropmenu"
+                                                                 id=dropmenu>
+                                                                <header class="con-head">Kids Furniture</header>
+                                                                <ul class="pro-nav">
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout1</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a href="#">Washers &
+                                                                            Dryers</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a href="#">Vacuum
+                                                                            Sealers</a>
+                                                                    </li>
+
+                                                                </ul>
+                                                            </div>
+                                                            <div class="dropmenu"
+                                                                 id=dropmenu>
+                                                                <header class="con-head">Kitchen Furniture</header>
+                                                                <ul class="pro-nav">
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout4</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout5</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout6</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-links last-cata">
+                                                    <a href="#tools"
+                                                       class="main-cata">Gift & Holidays</a>
+                                                    <div class="mega_content megas6"
+                                                         id="mega_content">
+                                                        <div class="content">
+                                                            <div class="dropmenu">
+
+                                                                <header class="con-head">Shop all gifts & holidays
+                                                                </header>
+                                                                <ul class="pro-nav">
+                                                                    <li class="drop-nav-link"><a href="#">Over-The-Range
+                                                                            Microwaves</a></li>
+                                                                    <li class="drop-nav-link"><a href="#">Boxing
+                                                                            Day</a></li>
+                                                                    <li class="drop-nav-link"><a href="#">Product
+                                                                            Layout3</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a href="#">Ovens &
+                                                                            Ranges</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a href="#">Product
+                                                                            Layout5</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a href="#">Product
+                                                                            Layout6</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="dropmenu">
+                                                                <header class="con-head">Fresh Flowers - Delivered
+                                                                </header>
+                                                                <ul class="pro-nav">
+                                                                    <li class="drop-nav-link"><a href="#">Electronic
+                                                                            gifts</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a href="#">Gifts for
+                                                                            babies</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a href="#">Gifts for
+                                                                            grandparents</a></li>
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout4</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout5</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout6</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="dropmenu">
+                                                                <header class="con-head">Secret Santa & gift
+                                                                    exchange</header>
+                                                                <ul class="pro-nav">
+                                                                    <li class="drop-nav-link"><a href="#">Christmas</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout2</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a href="#">Gifts for
+                                                                            women</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout4</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout5</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout6</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="dropmenu"
+                                                                 id=dropmenu>
+                                                                <header class="con-head">Product Layout</header>
+                                                                <ul class="pro-nav">
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout1</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout2</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout3</a>
+                                                                    </li>
+
+                                                                </ul>
+                                                            </div>
+                                                            <div class="dropmenu"
+                                                                 id=dropmenu>
+                                                                <header class="con-head">Product Layout</header>
+                                                                <ul class="pro-nav">
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout4</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout5</a>
+                                                                    </li>
+                                                                    <li class="drop-nav-link"><a
+                                                                           href="#">Product-Layout6</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="">
+                            <div class="frombar">
+                                <ul>
+                                    <a href="">
+                                        <li class="inner-li">Become a Seller</li>
+                                    </a>
+                                    <a href="">
+                                        <li class="inner-li">Track your Order</li>
+                                    </a>
+                                    <a href="">
+                                        <li class="inner-li">Submit RFQ</li>
+                                    </a>
+                                    <a href="">
+                                        <li class="inner-li">Customer Services</li>
+                                    </a>
+                                    <a href="">
+                                        <li class="inner-li">Deals</li>
+                                    </a>
+
+                                </ul>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-                <div class="">
-                    <div class="frombar">
-                        <ul>
-                            <a href="">
-                                <li class="inner-li">Become a Seller</li>
-                            </a> 
-                            <a href="">
-                                <li class="inner-li">Track your Order</li>
-                            </a> 
-                            <a href="">
-                                <li class="inner-li">Submit RFQ</li>
-                            </a> 
-                            <a href="">
-                                <li class="inner-li">Customer Services</li>
-                            </a>
-                            <a href="">
-                                <li class="inner-li">Deals</li>
-                            </a>
+            </div>
 
-                        </ul>
+        </div>
+    </div>
+        <!-- Banner Part start-->
+
+        <div class="slider">
+            <div class="slide_viewer">
+                <div class="slide_group">
+                    <div class="slide">
+                        <img class="desktop"
+                             src="images/Banner.png"
+                             alt="">
+                        <img class="mobile"
+                             src="images/banner-responsive.png"
+                             alt="">
+                        <img class="small"
+                             src="images/banner-mobile.png"
+                             alt="">
+                    </div>
+                    <div class="slide">
+                        <img class="desktop"
+                             src="images/banner3.png"
+                             alt="">
+                        <img class="mobile"
+                             src="images/banner3-responsive.png"
+                             alt="">
+                        <img class="small"
+                             src="images/banner3-mobile.png"
+                             alt="">
+                    </div>
+                    <div class="slide">
+                        <img class="desktop"
+                             src="images/banner2.png"
+                             alt="">
+                        <img class="mobile"
+                             src="images/banner2-responsive.png"
+                             alt="">
+                        <img class="small"
+                             src="images/banner2-mobile.png"
+                             alt="">
+                    </div>
+                    <div class="slide">
+                        <img class="desktop"
+                             src="images/banner4.png"
+                             alt="">
+                        <img class="mobile"
+                             src="images/banner4-responsive.png"
+                             alt="">
+                        <img class="small"
+                             src="images/banner4-mobile.png"
+                             alt="">
                     </div>
                 </div>
-
             </div>
-        </div>
-    </div>
-    <!-- Banner Part start-->
+        </div><!-- End // .slider -->
 
-    <div class="slider">
-        <div class="slide_viewer">
-            <div class="slide_group">
-                <div class="slide">
-                    <img class="desktop"
-                         src="images/Banner.png"
-                         alt="">
-                    <img class="mobile"
-                         src="images/banner-responsive.png"
-                         alt="">
-                    <img class="small"
-                         src="images/banner-mobile.png"
-                         alt="">
-                </div>
-                <div class="slide">
-                    <img class="desktop"
-                         src="images/banner3.png"
-                         alt="">
-                    <img class="mobile"
-                         src="images/banner3-responsive.png"
-                         alt="">
-                    <img class="small"
-                         src="images/banner3-mobile.png"
-                         alt="">
-                </div>
-                <div class="slide">
-                    <img class="desktop"
-                         src="images/banner2.png"
-                         alt="">
-                    <img class="mobile"
-                         src="images/banner2-responsive.png"
-                         alt="">
-                    <img class="small"
-                         src="images/banner2-mobile.png"
-                         alt="">
-                </div>
-                <div class="slide">
-                    <img class="desktop"
-                         src="images/banner4.png"
-                         alt="">
-                    <img class="mobile"
-                         src="images/banner4-responsive.png"
-                         alt="">
-                    <img class="small"
-                         src="images/banner4-mobile.png"
-                         alt="">
-                </div>
+        <div class="slide_buttons">
+        </div>
+
+        <div class="directional_nav">
+            <div class="previous_btn"
+                 title="Previous">
+                <img width="20"
+                     src="images/previous.png"
+                     alt="">
             </div>
-        </div>
-    </div><!-- End // .slider -->
-
-    <div class="slide_buttons">
-    </div>
-
-    <div class="directional_nav">
-        <div class="previous_btn"
-             title="Previous">
-            <img width="20"
-                 src="images/previous.png"
+            <div class="next_btn"
+                 title="Next">
+                <img width="20"
+                     src="images/next.png"
+                     alt="">
+            </div>
+        </div><!-- End // .directional_nav -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <!-- Banner part end -->
+        <!-- Featured post start -->
+        <div class="landing-img">
+            <img src="images/image (12).png"
                  alt="">
         </div>
-        <div class="next_btn"
-             title="Next">
-            <img width="20"
-                 src="images/next.png"
-                 alt="">
-        </div>
-    </div><!-- End // .directional_nav -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <!-- Banner part end -->
-    <!-- Featured post start -->
-    <div class="landing-img">
-        <img src="images/image (12).png"
-             alt="">
-    </div>
-    <!-- Featured post end -->
-    <!-- Product slider start -->
+        <!-- Featured post end -->
+        <!-- Product slider start -->
     <main>
         <header class="card-header">
             <h1>Bestselling items on Rollback</h1>
-
+    
         </header>
         <section class="main-section">
-            <div class="product">
-                <picture>
-                    <img src="images/office-1.jpg"
-                         alt="">
-                </picture>
-                <div class="detail">
-                    <p>
-                        <b>Product One</b><br>
-                        <small>New arrival</small>
-                    </p>
-                    <samp>$45.00</samp>
-                </div>
-                <div class="button">
-                    <p class="star">
-                        <strong>&star;</strong>
-                        <strong>&star;</strong>
-                        <strong>&star;</strong>
-                        <strong>&star;</strong>
-                        <strong>&star;</strong>
-                    </p>
-                    <a href="#">Add-cart</a>
-                </div>
+          
+            <a class="product-link"
+               href="">
+                <div class="product">
+                    <picture>
+                        <img src="images/card-1.jpg"
+                             alt="">
+                    </picture>
+                    <div class="main-detail">
+                        <div class="item-name">Item Name</div>
+            </a>
+            <div class="item-price">800.00$</div>
+            <div class="old-price"><del>910.00$</del></div>
+            <div class="save-price">110.00$</div>
+            <div id="cart-btn"
+                 class="cart-btn"><button onclick="hide_btn(this)">Add to Cart<i
+                       class="far plus-ico fa-plus-square"></i></button>
+                <div class="plus-btn"
+                     style="display: none !important;"
+                     onclick="show_btn(this)"> <span onclick="decrement(this)"
+                          class="remove-btn"><i class="fas fa-minus"></i></span><span id="cart-num-3">1</span> <span
+                          onclick="increment(this)"
+                          class="add-btn"><i class="fas fa-plus"></i></span></div>
             </div>
-            <div class="product">
-                <picture>
-                    <img src="images/office-2.jfif"
-                         alt="">
-                </picture>
-                <div class="detail">
-                    <p>
-                        <b>Product Two</b><br>
-                        <small>New arrival</small>
-                    </p>
-                    <samp>$45.00</samp>
-                </div>
-                <div class="button">
-                    <p class="star">
-                        <strong>&star;</strong>
-                        <strong>&star;</strong>
-                        <strong>&star;</strong>
-                        <strong>&star;</strong>
-                        <strong>&star;</strong>
-                    </p>
-                    <a href="#">Add-cart</a>
-                </div>
             </div>
-            <div class="product">
-                <picture>
-                    <img src="images/office-3.jfif"
-                         alt="">
-                </picture>
-                <div class="detail">
-                    <p>
-                        <b>Product Three</b><br>
-                        <small>New arrival</small>
-                    </p>
-                    <samp>$45.00</samp>
-                </div>
-                <div class="button">
-                    <p class="star">
-                        <strong>&star;</strong>
-                        <strong>&star;</strong>
-                        <strong>&star;</strong>
-                        <strong>&star;</strong>
-                        <strong>&star;</strong>
-                    </p>
-                    <a href="#">Add-cart</a>
-                </div>
             </div>
-            <div class="product">
-                <picture>
-                    <img src="images/office-4.jpg"
-                         alt="">
-                </picture>
-                <div class="detail">
-                    <p>
-                        <b>Product Four</b><br>
-                        <small>New arrival</small>
-                    </p>
-                    <samp>$45.00</samp>
-                </div>
-                <div class="button">
-                    <p class="star">
-                        <strong>&star;</strong>
-                        <strong>&star;</strong>
-                        <strong>&star;</strong>
-                        <strong>&star;</strong>
-                        <strong>&star;</strong>
-                    </p>
-                    <a href="#">Add-cart</a>
-                </div>
+            <a class="product-link"
+               href="">
+                <div class="product">
+                    <picture>
+                        <img src="images/card-2.jpg"
+                             alt="">
+                    </picture>
+                    <div class="main-detail">
+                        <div class="item-name">Item Name</div>
+            </a>
+            <div class="item-price">800.00$</div>
+            <div class="old-price"><del>910.00$</del></div>
+            <div class="save-price">110.00$</div>
+            <div id="cart-btn"
+                 class="cart-btn"><button onclick="hide_btn(this)">Add to Cart<i
+                       class="far plus-ico fa-plus-square"></i></button>
+                <div class="plus-btn"
+                     style="display: none !important;"
+                     onclick="show_btn(this)"> <span onclick="decrement(this)"
+                          class="remove-btn"><i class="fas fa-minus"></i></span><span id="cart-num-3">1</span> <span
+                          onclick="increment(this)"
+                          class="add-btn"><i class="fas fa-plus"></i></span></div>
             </div>
-            <div class="product">
-                <picture>
-                    <img src="images/online-1.jpg"
-                         alt="">
-                </picture>
-                <div class="detail">
-                    <p>
-                        <b>Product Five</b><br>
-                        <small>New arrival</small>
-                    </p>
-                    <samp>$45.00</samp>
-                </div>
-                <div class="button">
-                    <p class="star">
-                        <strong>&star;</strong>
-                        <strong>&star;</strong>
-                        <strong>&star;</strong>
-                        <strong>&star;</strong>
-                        <strong>&star;</strong>
-                    </p>
-                    <a href="#">Add-cart</a>
-                </div>
             </div>
-            <div class="product">
-                <picture>
-                    <img src="images/online-2.jfif"
-                         alt="">
-                </picture>
-                <div class="detail">
-                    <p>
-                        <b>Product Six</b><br>
-                        <small>New arrival</small>
-                    </p>
-                    <samp>$45.00</samp>
-                </div>
-                <div class="button">
-                    <p class="star">
-                        <strong>&star;</strong>
-                        <strong>&star;</strong>
-                        <strong>&star;</strong>
-                        <strong>&star;</strong>
-                        <strong>&star;</strong>
-                    </p>
-                    <a href="#">Add-cart</a>
-                </div>
             </div>
-            <div class="product">
-                <picture>
-                    <img src="images/online-4.jfif"
-                         alt="">
-                </picture>
-                <div class="detail">
-                    <p>
-                        <b>Product Seven</b><br>
-                        <small>New arrival</small>
-                    </p>
-                    <samp>$45.00</samp>
-                </div>
-                <div class="button">
-                    <p class="star">
-                        <strong>&star;</strong>
-                        <strong>&star;</strong>
-                        <strong>&star;</strong>
-                        <strong>&star;</strong>
-                        <strong>&star;</strong>
-                    </p>
-                    <a href="#">Add-cart</a>
-                </div>
+            <a class="product-link"
+               href="">
+                <div class="product">
+                    <picture>
+                        <img src="images/card-3.jpg"
+                             alt="">
+                    </picture>
+                    <div class="main-detail">
+                        <div class="item-name">Item Name</div>
+            </a>
+            <div class="item-price">800.00$</div>
+            <div class="old-price"><del>910.00$</del></div>
+            <div class="save-price">110.00$</div>
+            <div id="cart-btn"
+                 class="cart-btn"><button onclick="hide_btn(this)">Add to Cart<i
+                       class="far plus-ico fa-plus-square"></i></button>
+                <div class="plus-btn"
+                     style="display: none !important;"
+                     onclick="show_btn(this)"> <span onclick="decrement(this)"
+                          class="remove-btn"><i class="fas fa-minus"></i></span><span id="cart-num-3">1</span> <span
+                          onclick="increment(this)"
+                          class="add-btn"><i class="fas fa-plus"></i></span></div>
             </div>
-            <div class="product">
-                <picture>
-                    <img src="images/online-6.jfif"
-                         alt="">
-                </picture>
-                <div class="detail">
-                    <p>
-                        <b>Product Eight</b><br>
-                        <small>New arrival</small>
-                    </p>
-                    <samp>$45.00</samp>
-                </div>
-                <div class="button">
-                    <p class="star">
-                        <strong>&star;</strong>
-                        <strong>&star;</strong>
-                        <strong>&star;</strong>
-                        <strong>&star;</strong>
-                        <strong>&star;</strong>
-                    </p>
-                    <a href="#">Add-cart</a>
-                </div>
             </div>
-            <div class="product">
-                <picture>
-                    <img src="images/online-6.jfif"
-                         alt="">
-                </picture>
-                <div class="detail">
-                    <p>
-                        <b>Product Nine</b><br>
-                        <small>New arrival</small>
-                    </p>
-                    <samp>$45.00</samp>
-                </div>
-                <div class="button">
-                    <p class="star">
-                        <strong>&star;</strong>
-                        <strong>&star;</strong>
-                        <strong>&star;</strong>
-                        <strong>&star;</strong>
-                        <strong>&star;</strong>
-                    </p>
-                    <a href="#">Add-cart</a>
-                </div>
             </div>
-            <div class="product">
-                <picture>
-                    <img src="image/nokia-air.png"
-                         alt="">
-                </picture>
-                <div class="detail">
-                    <p>
-                        <b>Product Ten</b><br>
-                        <small>New arrival</small>
-                    </p>
-                    <samp>$45.00</samp>
-                </div>
-                <div class="button">
-                    <p class="star">
-                        <strong>&star;</strong>
-                        <strong>&star;</strong>
-                        <strong>&star;</strong>
-                        <strong>&star;</strong>
-                        <strong>&star;</strong>
-                    </p>
-                    <a href="#">Add-cart</a>
-                </div>
+            <a class="product-link"
+               href="">
+                <div class="product">
+                    <picture>
+                        <img src="images/card-4.jpg"
+                             alt="">
+                    </picture>
+                    <div class="main-detail">
+                        <div class="item-name">Item Name</div>
+                        <div class="item-price">800.00$</div>
+            </a>
+            <div class="old-price"><del>910.00$</del></div>
+            <div class="save-price">110.00$</div>
+            <div id="cart-btn"
+                 class="cart-btn"><button onclick="hide_btn(this)">Add to Cart<i
+                       class="far plus-ico fa-plus-square"></i></button>
+                <div class="plus-btn"
+                     style="display: none !important;"
+                     onclick="show_btn(this)"> <span onclick="decrement(this)"
+                          class="remove-btn"><i class="fas fa-minus"></i></span><span id="cart-num-4">1</span> <span
+                          onclick="increment(this)"
+                          class="add-btn"><i class="fas fa-plus"></i></span></div>
             </div>
-            <div class="product">
-                <picture>
-                    <img src="image/feature_3.png"
-                         alt="">
-                </picture>
-                <div class="detail">
-                    <p>
-                        <b>Product Eleven</b><br>
-                        <small>New arrival</small>
-                    </p>
-                    <samp>$45.00</samp>
-                </div>
-                <div class="button">
-                    <p class="star">
-                        <strong>&star;</strong>
-                        <strong>&star;</strong>
-                        <strong>&star;</strong>
-                        <strong>&star;</strong>
-                        <strong>&star;</strong>
-                    </p>
-                    <a href="#">Add-cart</a>
-                </div>
             </div>
-            <div class="product">
-                <picture>
-                    <img src="image/one.png"
-                         alt="">
-                </picture>
-                <div class="detail">
-                    <p>
-                        <b>Product Twelve</b><br>
-                        <small>New arrival</small>
-                    </p>
-                    <samp>$45.00</samp>
-                </div>
-                <div class="button">
-                    <p class="star">
-                        <strong>&star;</strong>
-                        <strong>&star;</strong>
-                        <strong>&star;</strong>
-                        <strong>&star;</strong>
-                        <strong>&star;</strong>
-                    </p>
-                    <a href="#">Add-cart</a>
-                </div>
             </div>
-
+            </div>
+            <a class="product-link"
+               href="">
+                <div class="product">
+                    <picture>
+                        <img src="images/card-5.jpg"
+                             alt="">
+                    </picture>
+                    <div class="main-detail">
+                        <div class="item-name">Item Name</div>
+            </a>
+            <div class="item-price">800.00$</div>
+            <div class="old-price"><del>910.00$</del></div>
+            <div class="save-price">110.00$</div>
+            <div id="cart-btn"
+                 class="cart-btn"><button onclick="hide_btn(this)">Add to Cart<i
+                       class="far plus-ico fa-plus-square"></i></button>
+                <div class="plus-btn"
+                     style="display: none !important;"
+                     onclick="show_btn(this)"> <span onclick="decrement(this)"
+                          class="remove-btn"><i class="fas fa-minus"></i></span><span id="cart-num">1</span> <span
+                          onclick="increment(this)"
+                          class="add-btn"><i class="fas fa-plus"></i></span></div>
+            </div>
+            </div>
+            </div>
+            <a class="product-link"
+               href="">
+                <div class="product">
+                    <picture>
+                        <img src="images/card-6.jpg"
+                             alt="">
+                    </picture>
+                    <div class="main-detail">
+                        <div class="item-name">Item Name</div>
+            </a>
+            <div class="item-price">800.00$</div>
+            <div class="old-price"><del>910.00$</del></div>
+            <div class="save-price">110.00$</div>
+            <div id="cart-btn"
+                 class="cart-btn"><button onclick="hide_btn(this)">Add to Cart<i
+                       class="far plus-ico fa-plus-square"></i></button>
+                <div class="plus-btn"
+                     style="display: none !important;"
+                     onclick="show_btn(this)"> <span onclick="decrement(this)"
+                          class="remove-btn"><i class="fas fa-minus"></i></span><span id="cart-num">1</span> <span
+                          onclick="increment(this)"
+                          class="add-btn"><i class="fas fa-plus"></i></span></div>
+            </div>
+            </div>
+            </div>
+            <a class="product-link"
+               href="">
+                <div class="product">
+                    <picture>
+                        <img src="images/card-7.jpg"
+                             alt="">
+                    </picture>
+                    <div class="main-detail">
+                        <div class="item-name">Item Name</div>
+            </a>
+            <div class="item-price">800.00$</div>
+            <div class="old-price"><del>910.00$</del></div>
+            <div class="save-price">110.00$</div>
+            <div id="cart-btn"
+                 class="cart-btn"><button onclick="hide_btn(this)">Add to Cart<i
+                       class="far plus-ico fa-plus-square"></i></button>
+                <div class="plus-btn"
+                     style="display: none !important;"
+                     onclick="show_btn(this)"> <span onclick="decrement(this)"
+                          class="remove-btn"><i class="fas fa-minus"></i></span><span id="cart-num">1</span> <span
+                          onclick="increment(this)"
+                          class="add-btn"><i class="fas fa-plus"></i></span></div>
+            </div>
+            </div>
+            </div>
+            <a class="product-link"
+               href="">
+                <div class="product">
+                    <picture>
+                        <img src="images/card-8.jpg"
+                             alt="">
+                    </picture>
+                    <div class="main-detail">
+                        <div class="item-name">Item Name</div>
+            </a>
+            <div class="item-price">800.00$</div>
+            <div class="old-price"><del>910.00$</del></div>
+            <div class="save-price">110.00$</div>
+            <div id="cart-btn"
+                 class="cart-btn"><button onclick="hide_btn(this)">Add to Cart<i
+                       class="far plus-ico fa-plus-square"></i></button>
+                <div class="plus-btn"
+                     style="display: none !important;"
+                     onclick="show_btn(this)"> <span onclick="decrement(this)"
+                          class="remove-btn"><i class="fas fa-minus"></i></span><span id="cart-num">1</span> <span
+                          onclick="increment(this)"
+                          class="add-btn"><i class="fas fa-plus"></i></span></div>
+            </div>
+            </div>
+            </div>
+            <a class="product-link"
+               href="">
+                <div class="product">
+                    <picture>
+                        <img src="images/card-9.jpg"
+                             alt="">
+                    </picture>
+                    <div class="main-detail">
+                        <div class="item-name">Item Name</div>
+            </a>
+            <div class="item-price">800.00$</div>
+            <div class="old-price"><del>910.00$</del></div>
+            <div class="save-price">110.00$</div>
+            <div id="cart-btn"
+                 class="cart-btn"><button onclick="hide_btn(this)">Add to Cart<i
+                       class="far plus-ico fa-plus-square"></i></button>
+                <div class="plus-btn"
+                     style="display: none !important;"
+                     onclick="show_btn(this)"> <span onclick="decrement(this)"
+                          class="remove-btn"><i class="fas fa-minus"></i></span><span id="cart-num">1</span> <span
+                          onclick="increment(this)"
+                          class="add-btn"><i class="fas fa-plus"></i></span></div>
+            </div>
+            </div>
+            </div>
+            <a class="product-link"
+               href="">
+                <div class="product">
+                    <picture>
+                        <img src="image/nokia-air.png"
+                             alt="">
+                    </picture>
+                    <div class="main-detail">
+                        <div class="item-name">Item Name</div>
+            </a>
+            <div class="item-price">800.00$</div>
+            <div class="old-price"><del>910.00$</del></div>
+            <div class="save-price">110.00$</div>
+            <div id="cart-btn"
+                 class="cart-btn"><button onclick="hide_btn(this)">Add to Cart<i
+                       class="far plus-ico fa-plus-square"></i></button>
+                <div class="plus-btn"
+                     style="display: none !important;"
+                     onclick="show_btn(this)"> <span onclick="decrement(this)"
+                          class="remove-btn"><i class="fas fa-minus"></i></span><span id="cart-num">1</span> <span
+                          onclick="increment(this)"
+                          class="add-btn"><i class="fas fa-plus"></i></span></div>
+            </div>
+            </div>
+            </div>
+            <a class="product-link"
+               href="">
+                <div class="product">
+                    <picture>
+                        <img src="image/feature_3.png"
+                             alt="">
+                    </picture>
+                    <div class="main-detail">
+                        <div class="item-name">Item Name</div>
+            </a>
+            <div class="item-price">800.00$</div>
+            <div class="old-price"><del>910.00$</del></div>
+            <div class="save-price">110.00$</div>
+            <div id="cart-btn"
+                 class="cart-btn"><button onclick="hide_btn(this)">Add to Cart<i
+                       class="far plus-ico fa-plus-square"></i></button>
+                <div class="plus-btn"
+                     style="display: none !important;"
+                     onclick="show_btn(this)"> <span onclick="decrement(this)"
+                          class="remove-btn"><i class="fas fa-minus"></i></span><span id="cart-num">1</span> <span
+                          onclick="increment(this)"
+                          class="add-btn"><i class="fas fa-plus"></i></span></div>
+            </div>
+            </div>
+            </div>
+            <a class="product-link"
+               href="">
+                <div class="product">
+                    <picture>
+                        <img src="image/card-1.jpg"
+                             alt="">
+                    </picture>
+                    <div class="main-detail">
+                        <div class="item-name">Item Name</div>
+            </a>
+            <div class="item-price">800.00$</div>
+            <div class="old-price"><del>910.00$</del></div>
+            <div class="save-price">110.00$</div>
+            <div id="cart-btn"
+                 class="cart-btn"><button onclick="hide_btn(this)">Add to Cart<i
+                       class="far plus-ico fa-plus-square"></i></button>
+                <div class="plus-btn"
+                     style="display: none !important;"
+                     onclick="show_btn(this)"> <span onclick="decrement(this)"
+                          class="remove-btn"><i class="fas fa-minus"></i></span><span id="cart-num">1</span> <span
+                          onclick="increment(this)"
+                          class="add-btn"><i class="fas fa-plus"></i></span></div>
+            </div>
+            </div>
+            </div>
+    
         </section>
         <div class="card-arrow">
             <p>
@@ -1149,7 +1348,226 @@
             </p>
         </div>
     </main>
+    <!-- Gallery start -->
+    <div class="gallery-show">
+        <div class="">
+            <div class="col-lg-12 col-md-12 col-sm-12 w">
+                <div class="gal-head">
+                    <h2>Shop Departments</h2>
+                </div>
+            </div>
+        </div>
+        <div class="main-gallery">
+
+            <div class="gallery-container">
+                <a href="">
+                    <div class="gallery-img">
+                        <img src="images/gal-1.jpg"
+                             alt="">
+                    </div>
+                    <div class="gallery-title">
+                        <p>Carrot</p>
+                    </div>
+                </a>
+            </div>
+            <div class="gallery-container">
+                <a href="">
+                    <div class="gallery-img">
+                        <img src="images/gal-2.jpg"
+                             alt="">
+                    </div>
+                    <div class="gallery-title">
+                        <p>Toys</p>
+                    </div>
+                </a>
+            </div>
+            <div class="gallery-container">
+                <a href="">
+                    <div class="gallery-img">
+                        <img src="images/gal-3.jfif"
+                             alt="">
+                    </div>
+                    <div class="gallery-title">
+                        <p>Gift</p>
+                    </div>
+                </a>
+            </div>
+            <div class="gallery-container">
+                <a href="">
+                    <div class="gallery-img">
+                        <img src="images/gal-4.jpg"
+                             alt="">
+                    </div>
+                    <div class="gallery-title">
+                        <p>Furniture</p>
+                    </div>
+                </a>
+            </div>
+            <div class="gallery-container">
+                <a href="">
+                    <div class="gallery-img">
+                        <img src="images/gal-5.jpg"
+                             alt="">
+                    </div>
+                    <div class="gallery-title">
+                        <p>Personal Care</p>
+                    </div>
+                </a>
+            </div>
+            <div class="gallery-container">
+                <a href="">
+                    <div class="gallery-img">
+                        <img src="images/gal-6.jfif"
+                             alt="">
+                    </div>
+                    <div class="gallery-title">
+                        <p>Pets</p>
+                    </div>
+                </a>
+            </div>
+            <div class="gallery-container">
+                <a href="">
+                    <div class="gallery-img">
+                        <img src="images/gal-7.jpg"
+                             alt="">
+                    </div>
+                    <div class="gallery-title">
+                        <p>Rat</p>
+                    </div>
+                </a>
+            </div>
+            <div class="gallery-container">
+                <a href="">
+                    <div class="gallery-img">
+                        <img src="images/gal-8.jpg"
+                             alt="">
+                    </div>
+                    <div class="gallery-title">
+                        <p>Woman</p>
+                    </div>
+                </a>
+            </div>
+            <div class="gallery-container">
+                <a href="">
+                    <div class="gallery-img">
+                        <img src="images/gal-9.jfif"
+                             alt="">
+                    </div>
+                    <div class="gallery-title">
+                        <p>Man</p>
+                    </div>
+                </a>
+            </div>
+            <div class="gallery-container">
+                <a href="">
+                    <div class="gallery-img">
+                        <img src="images/gal-10.jfif"
+                             alt="">
+                    </div>
+                    <div class="gallery-title">
+                        <p>Clothes</p>
+                    </div>
+                </a>
+            </div>
+            <div class="gallery-container">
+                <a href="">
+                    <div class="gallery-img">
+                        <img src="images/gal-3.jfif"
+                             alt="">
+                    </div>
+                    <div class="gallery-title">
+                        <p>Gift</p>
+                    </div>
+                </a>
+            </div>
+            <div class="gallery-container">
+                <a href="">
+                    <div class="gallery-img">
+                        <img src="images/gal-4.jpg"
+                             alt="">
+                    </div>
+                    <div class="gallery-title">
+                        <p>Furniture</p>
+                    </div>
+                </a>
+            </div>
+            <div class="gallery-container">
+                <a href="">
+                    <div class="gallery-img">
+                        <img src="images/gal-5.jpg"
+                             alt="">
+                    </div>
+                    <div class="gallery-title">
+                        <p>Personal Care</p>
+                    </div>
+                </a>
+            </div>
+            <div class="gallery-container">
+                <a href="">
+                    <div class="gallery-img">
+                        <img src="images/gal-6.jfif"
+                             alt="">
+                    </div>
+                    <div class="gallery-title">
+                        <p>Pets</p>
+                    </div>
+                </a>
+            </div>
+            <div class="gallery-container">
+                <a href="">
+                    <div class="gallery-img">
+                        <img src="images/gal-7.jpg"
+                             alt="">
+                    </div>
+                    <div class="gallery-title">
+                        <p>Rat</p>
+                    </div>
+                </a>
+            </div>
+            <div class="gallery-container">
+                <a href="">
+                    <div class="gallery-img">
+                        <img src="images/gal-8.jpg"
+                             alt="">
+                    </div>
+                    <div class="gallery-title">
+                        <p>Woman</p>
+                    </div>
+                </a>
+            </div>
+            <div class="gallery-container">
+                <a href="">
+                    <div class="gallery-img">
+                        <img src="images/gal-9.jfif"
+                             alt="">
+                    </div>
+                    <div class="gallery-title">
+                        <p>Man</p>
+                    </div>
+                </a>
+            </div>
+            <div class="gallery-container">
+                <a href="">
+                    <div class="gallery-img">
+                        <img src="images/gal-10.jfif"
+                             alt="">
+                    </div>
+                    <div class="gallery-title">
+                        <p>Clothes</p>
+                    </div>
+                </a>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+    <!-- Gallery end -->
+
     <!-- Product slider End -->
+   
     <!-- footer area start -->
     <footer class="footer-section">
         <div class="footer-main">
@@ -1243,6 +1661,25 @@
                 <div></div>
             </div>
         </div>
+        <div class="footer-3">
+            <div>
+                <ul class="last-ul">
+                    <a href="">
+                        <li>Terms of use</li>
+                    </a> |
+                    <a href="">
+                        <li>Privacy Policy</li>
+                    </a> |
+                    <a href="">
+                        <li>Interest-Based ads</li>
+                    </a>
+
+                </ul>
+            </div>
+            <div class="copy-right">
+                <p>@ 2021 - 2022 by A. Developers, Bangladesh Mart</p>
+            </div>
+        </div>
     </footer>
     <!-- footer area end -->
 
@@ -1258,7 +1695,7 @@
     <!-- Slider JS -->
     <script src="js/slider.js"></script>
     <!-- bootstrap js -->
- 
+
 </body>
 
 <script>
@@ -1353,10 +1790,24 @@
     });
 </script>
 <script>
-  let dropdown = ()=>{
-      let dropdown = document.getElementById('drop-nav-down')
-      dropdown.classList.toggle('dropdown-menu-1')
-  }
+    let dropdown = () => {
+        let dropdown = document.getElementById('drop-nav-down')
+        dropdown.classList.toggle('dropdown-menu-1')
+    }
 </script>
+<script>
+    window.addEventListener("scroll", function () {
+            let header = this.document.querySelector("#strip2");
+            let bar = this.document.querySelector("#nav_Bar");
+            let strip = this.document.querySelector("#strip");
+            let bod = document.querySelector('#accordion_body')
+            let stick = this.document.querySelector("#sec_bar");
+            // bar.classList.toggle('removeBar', window.scrollY >0)
+            header.classList.toggle("sticky", window.scrollY > 0);
+            stick.classList.toggle("stic", window.scrollY > 0);
+            bod.classList.toggle('main-bod', window.scrollY>0)
+            strip.classList.toggle('strip-2-mar', window.scrollY>0)
 
+        });
+</script>
 </html>

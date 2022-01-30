@@ -12,3 +12,11 @@
     display: block;
   }
 }
+@media (max-width: 385px) {
+  .bar {
+    margin-left: 5px;
+    color: orange;
+    font-size: 30px;
+    margin-top: 23px;
+  }
+}
